@@ -152,22 +152,30 @@
           <p>This form is the first version. Later we will connect it to Supabase so applications are stored in your CRM.</p>
         </div>
         <div class="contact-grid">
-          <form onsubmit="submitApplication(event)">
-            <label for="name">Full Name</label>
-            <input id="name" required placeholder="Enter your name">
-            <label for="email">Email</label>
-            <input id="email" type="email" required placeholder="Enter your email">
-            <label for="role">Interested Role</label>
-            <select id="role" required>
-              <option value="">Select a role</option>
-              <option>Junior Software Developer</option>
-              <option>Data Analyst</option>
-              <option>IT Support Specialist</option>
-            </select>
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Tell us briefly about yourself"></textarea>
-            <button class="primary" style="margin-top:18px;width:100%" type="submit">Submit Application</button>
-          </form>
+          <form action="https://formsubmit.co/hirepath258@gmail.com" method="POST">
+
+  <input type="hidden" name="_subject" value="New HirePath Job Application">
+  <input type="hidden" name="_template" value="table">
+
+  <label for="name">Full Name</label>
+  <input id="name" name="name" required placeholder="Enter your name">
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required placeholder="Enter your email">
+
+  <label for="role">Interested Role</label>
+  <select id="role" name="role" required>
+    <option value="">Select a role</option>
+    <option>Junior Software Developer</option>
+    <option>Data Analyst</option>
+    <option>IT Support Specialist</option>
+  </select>
+
+  <button class="primary" style="margin-top:18px;width:100%" type="submit">
+    Submit Application
+  </button>
+
+</form>
           <div class="card">
             <h3>For Employers</h3>
             <p style="margin:12px 0 22px">Need IT talent? Share your hiring requirement with HirePath and our recruitment team can connect with suitable candidates.</p>
